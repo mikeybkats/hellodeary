@@ -1,0 +1,569 @@
+p.projectTitle {
+    margin-left: auto;
+    margin-right: auto;
+    color: #ff9933;
+}
+
+p.sectionBody {
+    font-size: 18px;
+    text-align: left;
+    margin-top: 75px;
+    margin-left: 60px;
+    margin-right: 65px;
+}
+
+.boldText   {
+    font-weight: bold;
+}
+
+h1.sectionQuote {
+    text-align: left;
+    padding-left: 60px;
+    padding-right: 40px;
+}
+
+h2.sectionHeading {
+    text-align: left;
+    padding-left: 40px;
+}
+
+h2.headline {
+    height: 50px;
+    font-size: 20px;
+    font-family: lucida console !important;
+
+    font-style: normal !important;
+    margin-top: 0px;
+    color: #e90f51;
+}
+
+h2.headline:hover {
+    color: #e90f51 !important;
+    }
+
+body {
+	padding-top: 50px;
+	font-family: lucida console !important;
+}
+
+.iconFloat {
+    margin-right: 10px;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-bottom: auto;
+}
+
+#hello {
+    opacity: 1;
+}
+
+.mainScreenBug {
+    padding-top: 450px;
+    margin-top: 8%
+}
+
+/* Navbar */
+
+a {
+    color: black;
+}
+ 
+#navbar a {
+    
+}
+
+#navbar a:hover {
+    background-color: #e90f51 !important;
+}
+
+a.menuButton {
+    color: #555 !important;
+    background-color: transparent;
+}
+
+a.menuButton.active  {
+    color: #fff !important;
+    background-color: #e90f51 !important;
+}
+
+a.menuButton:hover  {
+    color: #fff !important;
+    background-color: #e90f51 !important;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #e90f51;
+    padding-top: 0px;
+}
+
+#navbar {
+	border: none;
+	margin-top: 15px;
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: #e9ac48;
+}
+
+.navbar-inverse {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.background.navbar.navbar-inverse.navbar-fixed-top {
+	background-image: url("../assets/navigation-background.jpg");
+	background-repeat: repeat;
+	border: none;
+	height: 245px;
+    max-width: none;
+	}
+
+.navbar-brand {
+	height: 120px;
+	margin-top: 15px;
+    padding-left: 25px;
+	}
+
+ul.nav.navbar-nav {
+    font-family: sans-serif;
+    font-style: normal;
+    font-size: 14px;
+}
+
+
+.navbar-inverse .navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: #e90f51;
+    /*opacity: .75; */
+}
+.navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 20px;
+    margin-top: -5px;
+}
+
+
+/* Home Screen Sections */
+
+a#about {
+    position: absolute;
+    margin-top: -200px;
+    height: 0px;
+    max-width: 0px;
+}
+
+a#services {
+    position: absolute;
+    margin-top: -200px;
+    height: 0px;
+    max-width: 0%;
+}    
+
+a#projects {
+    position: absolute;
+    margin-top: -200px;
+    height: 0px;
+    max-width: 0%;
+}    
+
+a#contact {
+    position: absolute;
+    margin-top: -200px;
+    height: 0px;
+    max-width: 0%;
+}    
+
+.starter-template {
+    margin-top: -61px;
+    background-position: 0 0;
+    }
+
+.services {
+    height: 1150px;
+    background-color: #eedaa1;      
+    background-size: inherit;
+    background-position: 0 0;
+    }
+
+.projects {
+    height: 1150px;
+    background-color: #d07e7e;      
+    background-size: inherit;
+    background-position: 0 0;
+    } 
+
+.about {
+    margin-top: -61px;
+    height: 1150px;
+    background-color: #f59a3f;      
+    background-size: inherit;
+    background-position: 0 0;
+    }
+
+.contact {
+    margin-top: -61px;
+    height: 1150px;
+    background-color: #939393;      
+    background-size: inherit;
+    background-position: 0 0;
+    }
+
+
+/* Media Queries */
+
+/* iPhone 4 and 5 */
+
+
+@media (min-width: 319px) {
+
+.container>.navbar-header {}
+
+}
+
+
+/* iPhone 6 */  
+
+@media (min-width: 360px) and (max-width: 380px){
+
+.socialIconsRow {
+    margin-top: 70px;
+    }   
+
+.socialIcons {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.socialIconsSC {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.serviceIcon {
+    background-color: #e90f51;
+    width: 160px;
+    height: 160px;
+    margin: 5px 5px 5px 0px;
+    padding: 0px 30px 0px 30px;
+}
+
+#hello {
+    max-width: 375px;
+    margin-left: 0px;
+    }
+
+nav.navbar.navbar-inverse.navbar-fixed-top {
+    max-width: 375px;
+    }
+
+a#about {
+    margin-top: 100px;
+    position: absolute;
+    margin-top: -260px;
+    width: 100%;
+    }
+
+img.navbar-brand {
+    margin-left: -15px;
+}
+
+h2.sectionHeading {
+    text-align: left;
+    padding-left: 55px;
+}
+
+h1.sectionQuote {
+    text-align: left;
+    padding-left: 75px;
+    padding-right: 60px;
+    font-size: 24px;
+    }
+
+p.sectionBody {
+    font-size: 18px;
+    text-align: left;
+    margin-top: 55px;
+    margin-left: 0px;
+    margin-right: 80px;
+    }   
+
+.starter-template {
+    padding: 80px 15px;
+    margin-top: -61px;
+    margin-left: -15px;
+    margin-right: -15px;
+    background-size: inherit;
+    text-align: center;
+    margin-top: 0px;
+    }
+
+.about {
+    height: 1200px;
+    background-color: #f59a3f;
+}
+
+.projects {
+    height: 950px;
+    background-color: #d07e7e;
+}
+
+.services {
+    height: 1800px;
+    background-color: #eedaa1;
+}
+
+.contact {
+    height: 850px;
+    background-color: #939393;
+}
+
+.hero.starter-template {
+    margin-top: -50px;
+    height: 800px;
+    background-image: url("../assets/hero-background.jpg");
+    background-size: 160%;
+    }
+
+.background.navbar.navbar-inverse.navbar-fixed-top {
+    background-image: url("../assets/navigation-background.jpg");
+    background-repeat: repeat;
+    /*border: none;
+    height: 245px;
+    max-width: 375px;*/
+    }
+
+}
+
+@media (min-width: 768px){
+.container {
+    width: 100%;
+    }
+
+.iconFloat {
+    margin-right: 25%;
+    margin-left: 25%;
+    margin-top: 25%;
+    margin-bottom: 25px;
+    height: 50%;
+    width: 50%;
+    }
+
+}
+
+@media (min-width: 992px) {
+.container {
+    width: 100%;
+    }
+
+.iconFloat {
+    margin-right: 25%;
+    margin-left: 25%;
+    margin-top: 25%;
+    margin-bottom: 25px;
+    height: 50%;
+    width: 50%;
+    }
+
+}
+
+@media (min-width: 1200px) {
+.container {
+    width: 100%;
+    }
+}
+
+
+@media all and (min-width: 720px) and (max-width: 1600px) {
+
+img.image-responsive.center-block {
+    margin-top: 70px;
+}
+
+.serviceIcon {
+    background-color: #e90f51;
+    width: 200px;
+    height: 200px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+.col-md-6.sectionDiv {
+    padding-top: 35px;
+}
+
+/*
+#hello {
+    max-width: 100%;
+    }
+
+nav.navbar.navbar-inverse.navbar-fixed-top {
+    max-width: 100%;
+    }
+*/
+.socialIconsRow {
+    margin-left: 40px;
+    margin-top: 35px;
+    }
+
+.socialIcons {
+    padding: 0px 4% 0px 4%;
+    float: left;
+    height: 30px;
+    }
+
+.socialIconsSC {
+    padding: 0px 4% 0px 4%;
+    float: left;
+    margin-top: 5px;
+    }
+
+.sticky {
+    position: fixed;
+    top: 0;
+    }
+
+h1.sectionQuote {
+    text-align: left;
+    padding-left: 75px;
+    padding-right: 60px;
+    font-size: 40px;
+    }
+
+a#about {
+    position: absolute;
+    margin-top: -125px;
+    height: 800px;
+    max-width: 0px;
+}
+
+a#services {
+    position: absolute;
+    margin-top: -125px;
+    height: 800px;
+    max-width: 0px;
+}    
+
+a#contact {
+    position: absolute;
+    margin-top: -125px;
+    height: 800px;
+    max-width: 0px;
+}   
+
+a#projects {
+    position: absolute;
+    margin-top: -125px;
+    height: 800px;
+    max-width: 0px;
+}    
+
+.starter-template {
+    margin-top: -61px;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-top: 30px;
+    background-color: #f59a3f;      
+    background-size: inherit;
+    background-position: 0 0;
+    }
+
+.about {
+  	height: 750px;
+    background-color: #f59a3f;  	
+    background-size: inherit;
+    background-position: 0 0;
+    }
+
+.services {
+    height: 1100px;
+    background-color: #eedaa1;      
+    background-size: inherit;
+    background-position: 0 0;
+    }
+
+.projects {
+    height: 800px;
+    background-color: #d07e7e;      
+    background-size: inherit;
+    background-position: 0 0;
+    }
+
+ 
+.contact {
+    height: 800px;
+    background-color: #939393;      
+    background-size: inherit;
+    background-position: 0 0;
+    }
+
+.hero.starter-template {
+    margin-top: -61px;
+    margin-left: -15px;
+    margin-right: -15px;
+    height: 800px;
+    background-image: url("../assets/hero-background.jpg");     
+    background-size: inherit;
+    background-position: 0 0;
+    }
+
+
+.background.navbar.navbar-inverse.navbar-fixed-top {
+	background-image: url("../assets/navigation-background.jpg");
+	background-repeat: repeat;
+	border: none;
+	height: 120px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+
+
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    margin-left: 50px;
+}
+
+div#navbar {
+	border: none;
+	margin-top: -10px;
+}
+
+
+ h2.headline {
+    height: 65px;
+    font-size: 20px;
+    font-family: lucida-console;
+    font-style: italic;
+    margin-top: 55px;
+    margin-right: -30px;
+    width: 62%;
+    color: #e90f51;
+    padding-right: 90px;
+	}
+
+.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+    max-height: 340px;
+    float: right;
+    margin-top: 20px;
+	margin-right: 50px;
+	}
+
+.navbar-header {
+	width: 100%;
+	}
+
+.headline.navbar-brand {
+	float: right;
+	margin-right: -85px;
+	}
+
+.row.secondRowProjects {
+    margin-left: 30px;
+    margin-right: auto;
+    margin-top: 50px;
+    }
+
+}
+ 
+
