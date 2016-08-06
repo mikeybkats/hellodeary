@@ -47,6 +47,11 @@ table {
 	border-spacing: 0;
 }
 
+h1 {
+  color: #e90f51;
+  font-size: 5em;
+}
+
 h2 {
   color: #e90f51;
   font-size: 1.5em;
@@ -66,6 +71,15 @@ a.menuButton.active {
 
 }
 
+.title.large {
+  max-width: 1000px;
+  padding: 0px 100px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 header {
   display: flex;
   height: 190px;
@@ -77,18 +91,80 @@ header {
 }
 
 section {
-
+  min-height: 600px;
+  height:100vh;
 }
 
 .navigation {
-  margin-top: 11px;
+  padding-top: 11px;
+  background-color: #f59a3f;
+
+  position: absolute;
+  margin-top: 190px;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  border-top: 0;
 }
 
+.navigation.fixed{
+  position: fixed;
+  padding-top: 11px;
+  margin-top: 0px;
+  background-color: transparent;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  border-top: 0;
+}
+
+
 .navbar {
-  margin: 0px;
+  /*margin: 0px;
   padding: 0px 7%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  list-style-type: none;*/
+  margin: 0px;
+  padding: 0px 5%;
+  display: flex;
+  justify-content: flex-start;
   list-style-type: none;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f59a3f;
+}
+
+.center.icon {
+  width: 100px;
+  margin-top: 60px;
+}
+
+.about {
+  background-color: #939393;
+}
+
+.projects {
+  background-color: #d07e7e;
+}
+
+.ideas {
+  background-color: #eedaa1;
+}
+
+.contact {
+  background-color: #939393;
+}
+
+footer {
+  background-color: #939393;
+  height: 200px;
 }
