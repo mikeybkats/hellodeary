@@ -144,8 +144,16 @@ section {
 }
 
 .center.icon {
-  width: 100px;
+  width: 140px;
   margin-top: 60px;
+}
+
+.on {
+  display: flex;
+}
+
+.off {
+  display: none;
 }
 
 .about {
