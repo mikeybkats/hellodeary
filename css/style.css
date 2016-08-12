@@ -91,6 +91,7 @@ header {
 }
 
 section {
+	display: flex;
   min-height: 600px;
   height:100vh;
 }
@@ -98,7 +99,6 @@ section {
 .navigation {
   padding-top: 11px;
   background-color: #f59a3f;
-
   position: absolute;
   margin-top: 190px;
   width: 100%;
@@ -120,14 +120,7 @@ section {
   border-top: 0;
 }
 
-
 .navbar {
-  /*margin: 0px;
-  padding: 0px 7%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  list-style-type: none;*/
   margin: 0px;
   padding: 0px 5%;
   display: flex;
@@ -136,24 +129,31 @@ section {
 }
 
 .hero {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
   background-color: #f59a3f;
 }
 
+.mustard {
+	color: #FF9933;
+}
+
+.caption {
+	margin: 0 0 15% 0;
+}
+
+.icon {
+}
+
+.row.icon {
+	margin: 10%;
+	max-width: 120px;
+}
+
 .center.icon {
-  width: 140px;
+	width: 140px;
   margin-top: 60px;
-}
-
-.on {
-  display: flex;
-}
-
-.off {
-  display: none;
 }
 
 .about {
@@ -161,6 +161,8 @@ section {
 }
 
 .projects {
+	flex-direction: column;
+	justify-content: center;
   background-color: #d07e7e;
 }
 
@@ -175,4 +177,26 @@ section {
 footer {
   background-color: #939393;
   height: 200px;
+}
+
+.row {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	align-content: space-around;
+}
+
+.box {
+	background-color: #e90f51;
+	width:20%;
+	max-width: 200px;
+	height: 20%;
+	max-height: 200px;
+	display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-title {
+	margin: 20px;
 }
