@@ -1,19 +1,23 @@
-
 //menu highlight
-
 $(document).ready(function(event) {
   $('a.menuButton').click(function() {
     $('a.menuButton.active').removeClass('active');
     $(this).addClass('active');
   });
 
-  $(".scroll").click(function(event){
+  $(".menuButton").click(function(event){
         event.preventDefault();
         //calculate destination place
         var dest=0;
+        // .hash is a jquery property which grabs the target of the href
+        console.log(this.hash);
+
+        // if this target
         if($(this.hash).offset().top > $(document).height()-$(window).height()){
              dest=$(document).height()-$(window).height();
-        }else{
+        }
+
+        else{
              dest=$(this.hash).offset().top;
         }
         //go to destination
@@ -24,7 +28,6 @@ $(document).ready(function(event) {
 
 
 //sticky menu
-
 var window = document.getElementById('window');
 
 function scrollReader (event){
@@ -42,5 +45,10 @@ function scrollReader (event){
     navigation.className = 'navigation';
   }
 };
+
+// load fancybox
+$(document).ready(function() {
+  		$(".fancybox").fancybox();
+  });
 
 window.addEventListener('scroll', scrollReader);

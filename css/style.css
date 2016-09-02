@@ -172,6 +172,15 @@ section {
 	max-width: 120px;
 }
 
+.clear {
+	width: 100%;
+  margin: 30px 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
+}
+
 .center.icon {
 	width: 140px;
   margin-top: 25px;
