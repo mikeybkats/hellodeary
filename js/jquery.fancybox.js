@@ -79,10 +79,10 @@
 			wrapCSS   : '',
 
 			arrows     : true,
-			closeBtn   : true,
+			closeBtn   : false,
 			closeClick : false,
 			nextClick  : false,
-			mouseWheel : true,
+			mouseWheel : false,
 			autoPlay   : false,
 			playSpeed  : 3000,
 			preload    : 3,

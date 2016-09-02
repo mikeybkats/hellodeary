@@ -48,7 +48,16 @@ function scrollReader (event){
 
 // load fancybox
 $(document).ready(function() {
-  		$(".fancybox").fancybox();
+  		$(".fancybox").fancybox(
+        {
+            openEffect  : 'none',
+            closeEffect : 'none',
+            nextEffect  : 'none',
+            prevEffect  : 'none',
+            padding     : 0,
+            margin      : [20, 60, 20, 60] // Increase left/right margin
+        }
+      );
   });
 
 window.addEventListener('scroll', scrollReader);
