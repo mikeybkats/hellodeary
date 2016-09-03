@@ -48,8 +48,9 @@ function scrollReader (event){
 
 // load fancybox
 $(document).ready(function() {
-  		$(".fancybox").fancybox(
-        {
+  		$(".fancybox")
+      .attr('rel', 'gallery')
+      .fancybox({
             openEffect  : 'none',
             closeEffect : 'none',
             nextEffect  : 'none',
@@ -59,5 +60,6 @@ $(document).ready(function() {
         }
       );
   });
+
 
 window.addEventListener('scroll', scrollReader);
