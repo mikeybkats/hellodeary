@@ -77,19 +77,22 @@ h4 {
 }
 
 p {
+	font-family: 'Open Sans';
+	font-size: 18px;
+	font-weight: 300;
 	color: white;
 	background-color: inherit;
-	font-size: 18px;
 	padding: 25px;
 }
 
 a {
-	color: white;
+	color: #EC0050;
+	background-color: #FEFE51;
   text-decoration: underline;
 }
 
 a:visited {
-	color: white;
+	color: #EC0050;
 }
 
 header {
@@ -214,6 +217,7 @@ footer {
 
 .full_story {
 	margin-bottom: 17%;
+	padding: 10px;
 }
 
 .thin_title_box {
@@ -237,6 +241,7 @@ footer {
 
 .title.heading {
 	margin: 10px 0px;
+
 }
 
 .title.large {

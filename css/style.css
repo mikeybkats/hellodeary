@@ -65,6 +65,8 @@ h3 {
 }
 
 p {
+  font-family: 'Open Sans';
+  font-weight: 300;
 	font-size: 18px;
 }
 
@@ -78,6 +80,10 @@ a:visited {
 }
 
 a.menuButton {
+  padding: 10px;
+}
+
+a.menuButtonHome {
   padding: 10px;
 }
 
@@ -221,7 +227,7 @@ footer {
 
 
 .row {
-	margin: 30px 0px;
+	margin: 30px 70px;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -241,10 +247,14 @@ footer {
 
 .text-box {
 	background-color: transparent;
-	width: 37%;
-  max-width: 500px;
-  height: 40%;
-  max-height: 500px;
+	width: 35%;
+  display: flex;
+  flex-direction: column;
+}
+
+.address_box {
+	background-color: transparent;
+	width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -254,14 +264,14 @@ footer {
 }
 
 .social {
-	margin-right: 10%;
-	justify-content: flex-start;
+  margin: 10px 0px;
+  display: flex;
 }
 
 .socialicon {
-	margin: 0 20px 0 0;
-	max-width: 30px;
-	max-height: 30px;
+    margin: 10px 20px;
+    height: 19px;
+    width: auto;
 }
 
 
@@ -285,4 +295,36 @@ footer {
 
 .fancybox-type-iframe .fancybox-prev {
     left: -60px;
+}
+
+/* styling for detail page */
+
+p.blog {
+  font-family: 'Open Sans';
+  line-height: 18px;
+  font-weight: 300;
+  font-size: 16px;
+  color: white;
+  margin: 20px 40px;
+}
+
+.blog_section {
+	flex-direction: column;
+	align-items: flex-start;
+  background-color: #f59a3f;
+}
+
+.navigation_modal {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  background-color: #f59a3f;
+}
+
+.case_study_image {
+	max-width: 100%;
+	height: auto;
+}
+
+.blog_title {
+  margin-left: 5%;
 }
