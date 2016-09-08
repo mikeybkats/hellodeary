@@ -214,9 +214,9 @@ footer {
 	margin: 5px 5px;
 }
 
-/*.void {
-	height: 74%;
-}*/
+.full_story {
+	margin-bottom: 17%;
+}
 
 .title_box {
 	background-color: #EC0050;
