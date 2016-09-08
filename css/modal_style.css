@@ -67,7 +67,6 @@ h3 {
 	font-weight: bold;
 	color: #fff;
   font-size: 2em;
-	padding: 20px 0px;
 }
 
 h4 {
@@ -93,34 +92,13 @@ a:visited {
 	color: white;
 }
 
-.title {
-	margin: 5px 0px;
-}
-
-.title.heading {
-	margin: 10px 0px;
-}
-
-.title.large {
-  max-width: 1000px;
-  padding: 0px 100px;
-  flex-direction: column;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.quotation_width {
-	width: 80%;
-}
-
 header {
   display: flex;
 	background-color: #00BEE5;
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
-  padding: 15px 10px;
+  padding: 15px 30px;
 	margin: 10px 5px;
 }
 
@@ -131,7 +109,12 @@ section {
 	margin: 5px 5px;
 }
 
+.title {
+	padding: 25px 0px;
+}
+
 .hero_image {
+	min-height: 250px;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -171,7 +154,6 @@ footer {
 .row {
 	display: flex;
 	justify-content: space-around;
-
 }
 
 .box_two {
@@ -227,7 +209,6 @@ footer {
   flex-direction: column;
 	align-content: flex-start;
   align-items: center;
-	padding: 0px 0px;
 	margin: 5px 5px;
 }
 
@@ -235,12 +216,38 @@ footer {
 	margin-bottom: 17%;
 }
 
-.title_box {
+.thin_title_box {
 	background-color: #EC0050;
 	width: 100%;
 	display: flex;
   flex-direction: column;
   align-items: flex-start;;
-	padding: 10px 10px 10px 40px;
+	padding: 10px 10px 10px 30px;
 	margin: 0px 0px 5px 0px;
+}
+
+.large_title_box {
+	background-color: #EC0050;
+	display: flex;
+  flex-direction: column;
+  align-items: flex-start;;
+	margin: 0px 5px 10px 5px;
+	padding-left: 30px;
+}
+
+.title.heading {
+	margin: 10px 0px;
+}
+
+.title.large {
+  max-width: 1000px;
+  padding: 0px 100px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quotation_width {
+	width: 80%;
 }
