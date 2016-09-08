@@ -79,6 +79,7 @@ h4 {
 
 p {
 	color: white;
+	background-color: inherit;
 	font-size: 18px;
 	padding: 25px;
 }
