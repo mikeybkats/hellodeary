@@ -203,7 +203,7 @@ footer {
 
 .inner_box {
 	/*border: 1px solid black;*/
-	background-color: #00BEE5;
+	background-color: #00BEE5 !important;
 	width: 100%;
 	display: flex;
   flex-direction: column;
