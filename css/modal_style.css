@@ -174,8 +174,8 @@ footer {
 
 }
 
-.box {
-	/*border: 1px solid black;*/
+.box_two {
+	/* for two boxes in a row */
 	background-color: #00BEE5;
 	width: 50%;
 	min-height: 300px;
@@ -185,6 +185,23 @@ footer {
   align-items: center;
 	padding: 0px 0px 20px 0px;
 	margin: 5px 5px 5px 0px;
+}
+
+.box_three {
+	/* for three boxes in a row */
+	background-color: #00BEE5;
+	width: 33%;
+	min-height: 200px;
+	display: flex;
+	justify-content: center;
+  flex-direction: column;
+  align-items: center;
+	padding: 0px 0px 20px 0px;
+	margin: 5px 5px 5px 0px;
+}
+
+.box_middle {
+	margin: 5px 5px 5px 5px;
 }
 
 .box_right {
