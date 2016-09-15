@@ -29,22 +29,26 @@ $(document).ready(function(event) {
 
 //sticky menu
 var window = document.getElementById('window');
+var url = window.location.pathname;
+var filename = url.substring(url.lastIndexOf('/')+1);
 
-function scrollReader (event){
-  var scrollAmount = $(window).scrollTop();
-  // console.log(scrollAmount);
+if (filename === 'index.html'){
+  function scrollReader (event){
+    var scrollAmount = $(window).scrollTop();
+    // console.log(scrollAmount);
 
-  var navigation = document.getElementById('navbar');
-  if (scrollAmount >= 193){
-    var navigation = document.getElementById('navigation');
-    navigation.className = 'navigation fixed';
-  }
+    var navigation = document.getElementById('navbar');
+    if (scrollAmount >= 193){
+      var navigation = document.getElementById('navigation');
+      navigation.className = 'navigation fixed';
+    }
 
-  if (scrollAmount <= 192){
-    var navigation = document.getElementById('navigation');
-    navigation.className = 'navigation';
-  }
-};
+    if (scrollAmount <= 192){
+      var navigation = document.getElementById('navigation');
+      navigation.className = 'navigation';
+    }
+  };
+}
 
 // load fancybox
 $(document).ready(function() {
