@@ -1,3 +1,8 @@
+var devLink = document.getElementById('devLink');
+var devBox = document.getElementById('devBox');
+
+var detailLink = document.getElementById('detailLink');
+
 //menu highlight
 $(document).ready(function(event) {
   $('a.menuButton').click(function() {
@@ -26,6 +31,10 @@ $(document).ready(function(event) {
 
 });
 
+function iframeAddClass(){
+  $('.fancybox-nav').addClass('display_none');
+  console.log('success');
+};
 
 //sticky menu
 var window = document.getElementById('window');
@@ -61,9 +70,32 @@ $(document).ready(function() {
             prevEffect  : 'none',
             padding     : 0,
             margin      : [20, 60, 20, 60] // Increase left/right margin
+
         }
       );
   });
 
+// load hero image into detail page
+var heroImageSrc = $('#heroImage').attr('src');
+$('#heroImageSection').css(
+	'background', 'url(' + heroImageSrc + ') 100% 100% no-repeat border-box'
+); 
+
+$('#heroImageSection').css(
+	'background-size', 'contain'
+);
+
+var caseStudyImage = $('#caseStudyImage1').attr('src');
+
+$('#pictureBox1').css(
+	'background', 'url(' + caseStudyImage + ') 100% 100% no-repeat border-box'
+);
+
+$('#pictureBox1').css(
+	'background-size', 'contain'
+);
+
+$('#pictureBox1').addClass('blog_image');
 
 window.addEventListener('scroll', scrollReader);
+

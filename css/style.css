@@ -328,3 +328,7 @@ p.blog {
 .blog_title {
   margin-left: 5%;
 }
+
+.display_none {
+  display: none;
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" href="assets/favicon.ico">
+    <title>Hello Deary</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,300,300italic,400italic,700,100italic,500italic,700italic,100' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+
+  </head>
+
+  <body>
+    <header id="pageHeader">
+        <img src="assets/title.png">
+        <h2>michael barakat's (a designer's) collection of projects</h2>
+    </header>
+    <nav class="navigation" id="navigation">
+      <ul class="navbar">
+        <li><a href="#projects" class="menuButton">PROJECTS</a></li>
+        <li><a href="#about" class="menuButton">ABOUT</a></li>
+        <li><a href="#ideas" class="menuButton">IDEAS</a></li>
+        <li><a href="#contact" class="menuButton">CONTACT</a></li>
+      </ul>
+    </nav>
+    <section class="hero" id="hero">
+      <div class="title large">
+        <h1>A multidisciplinary designer with a heartbeat.</h1>
+      </div>
+        <img src="assets/heart-bit-pump.svg" class="center icon heartPump" id="heartTwo">
+    </section>
+
+    <section class="projects" id="projects">
+      <div class="section-title">
+        <h2 class="title heading">/projects</h2>
+      </div>
+      <div class="row">
+        <div class="box">
+          <a href="modal_sections/productdesign_modal.html" rel="group" class="fancybox fancybox.iframe clear" >
+            <img src="assets/product-design.svg" class="row icon">
+          </a>
+          <div class="caption">
+            <p><span class="mustard">product design</span></p>
+          </div>
+        </div>
+
+        <div class="box">
+          <a href="modal_sections/ecommerce_modal.html" rel="group" class="fancybox fancybox.iframe clear" >
+            <img src="assets/product-management.svg" class="row icon">
+          </a>
+          <div class="caption">
+            <p><span class="mustard">e-commerce</span></p>
+          </div>
+        </div>
+
+        <div class="box">
+          <a href="modal_sections/userexperience_modal.html" rel="group" class="clear fancybox fancybox.iframe">
+            <img src="assets/development.svg" class="row icon">
+          </a>
+          <div class="caption">
+            <p><span class="mustard">User Experience</span></p>
+          </div>
+        </div>
+
+        <div class="box" id="devBox">
+          <a href="modal_sections/development_modal.html" rel="group" class="clear fancybox fancybox.iframe" id="devLink" >
+            <img src="assets/development.svg" class="row icon">
+          </a>
+          <div class="caption">
+            <p><span class="mustard">development</span></p>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="about" id="about">
+      <div class="section-title">
+        <h2 class="title heading">/about</h2>
+      </div>
+
+      <div class="row">
+        <div class="text-box">
+          <h3>&quot;Design, development, production work...I got you babe.&quot;</h3>
+        </div>
+
+        <div class="text-box">
+          <p>Michael has ten years of experience producing digital media, product and design projects.</p><br/>
+          <p>Product Manager retail, marketing, sales</p><br/>
+          <p>Project Manager product, organization, Web design and development</p><br/>
+          <p>Web Producer HTML, CSS, javascript, email newsletters</p><br/>
+          <p>Media Producer photography, music, video, and animation</p><br/>
+          <p>Product Designer physical Products design and production</p><br/>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="ideas" id="ideas">
+
+      <div class="section-title">
+        <h2 class="title heading">/ideas</h2>
+      </div>
+
+      <div class="row">
+
+        <div class="box">
+          <img src="assets/development.svg" class="row icon">
+          <div class="caption">
+            <p><span class="mustard">idea</span></p>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="assets/development.svg" class="row icon">
+          <div class="caption">
+            <p><span class="mustard">idea</span></p>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="assets/development.svg" class="row icon">
+          <div class="caption">
+            <p><span class="mustard">idea</span></p>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="assets/development.svg" class="row icon">
+          <div class="caption">
+            <p><span class="mustard">idea</span></p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+
+      <div class="section-title">
+        <h2 class="title heading">/contact</h2>
+      </div>
+
+      <div class="row">
+        <div class="text-box">
+          <h3>&quot;if you want to track me down...&quot;</h3>
+        </div>
+
+        <div>
+          <div class="address_box">
+            <p class="title">EMAIL</p>
+            <p>michaelbkats@gmail.com</p><br/>
+
+            <p class="title">CALL</p>
+            <p>215-519-9164</p><br/>
+
+            <p class="title">ADDRESS</p>
+            <p>Capital Hill<br/>
+            Madison St<br/>
+            Seattle, WA 98122<br/>
+            </p><br/>
+
+            <a href="">CV</a><br/>
+          </div>
+
+          <div class="social">
+            <img class="socialicon" src="assets/tumblr.png">
+            <img class="socialicon" src="assets/twitter.png">
+            <img class="socialicon" src="assets/linked-in.png">
+            <img class="socialicon" src="assets/soundcloud.png">
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <footer></footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.pack.js?v=2.1.5"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.js?v=2.1.5"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+  </body>
+
+</html>

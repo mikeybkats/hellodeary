@@ -96,7 +96,7 @@
 			},
 			iframe : {
 				scrolling : 'auto',
-				preload   : true
+				preload   : false
 			},
 			swf : {
 				wmode: 'transparent',
