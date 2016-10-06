@@ -16,7 +16,7 @@
     </div>
 
     <section class="hero_image" id="heroImageSection">
-	<--! add image as src to insert to hero. -->
+	<!-- add image as src to insert to hero. -->
 	<link rel="image_src" src="../images/development_codefellows_hero.jpg" id="heroImage"/>
     </section>
 

@@ -85,14 +85,38 @@ $('#heroImageSection').css(
 	'background-size', 'contain'
 );
 
-var caseStudyImage = $('#caseStudyImage1').attr('src');
+function caseStudyIdMaker(){
+	
+	for(i = 0; i<3; i++){
+		var caseStudyID = '#caseStudyImage' + [i] ;
+		
+		var caseStudyImageSRC = $(caseStudyID).attr('src');
 
-$('#pictureBox1').css(
-	'background', 'url(' + caseStudyImage + ') 100% 100% no-repeat border-box'
-);
+		var pictureBoxID = '#pictureBox' + [i];	
+			
+		$(pictureBoxID).css(
+		'background', 'url(' + caseStudyImageSRC + ') 100% 100% no-repeat border-box'
+		);
+		
+		$(pictureBoxID).css(
+		'background-size', 'cover'
+		);
 
-$('#pictureBox1').css(
-	'background-size', 'contain'
-);
+		$(pictureBoxID).css(
+		'background-position', 'center'
+		);
+
+		$(pictureBoxID).addClass('blog_image');
+		
+	}
+}
+
+function (){
+	// if body id is equal to project set .fancybox_nav to hidden
+}  
+
+
+caseStudyIdMaker();
 
 window.addEventListener('scroll', scrollReader);
+

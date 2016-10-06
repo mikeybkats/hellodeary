@@ -334,7 +334,7 @@ p.blog {
 }
 
 .blog_image {
-	min-height: 360px;
+	min-height: 350px;
 	min-width: 100%;
 }
 
