@@ -65,8 +65,8 @@ h3 {
 }
 
 p {
-  font-family: 'Open Sans';
-  font-weight: 300;
+	font-family: 'Open Sans';
+	font-weight: 300;
 	font-size: 18px;
 }
 
@@ -300,12 +300,12 @@ footer {
 /* styling for detail page */
 
 p.blog {
-  font-family: 'Open Sans';
-  line-height: 18px;
-  font-weight: 300;
-  font-size: 16px;
-  color: white;
-  margin: 20px 40px;
+	font-family: 'Open Sans';
+	line-height: 18px;
+	font-weight: 300;
+	font-size: 16px;
+	color: black;
+	margin: 20px 40px;
 }
 
 .blog_section {
@@ -334,7 +334,11 @@ p.blog {
 }
 
 .blog_image {
-	min-height: 350px;
+	min-height: 450px;
 	min-width: 100%;
+}
+
+.box_caption {
+	background-color: #F6F6F6;
 }
 

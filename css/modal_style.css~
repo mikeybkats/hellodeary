@@ -218,6 +218,12 @@ footer {
 .fullstory {
 	margin-bottom: 10%;
 	padding: 10px;
+	background-color: #f59a3f;
+	color: white;
+}
+
+a.fullstory {
+	color: white;
 }
 
 .thin_title_box {
@@ -269,6 +275,3 @@ footer {
 	max-width: 80%;
 }
 
-.blog_image {
-	min-height: 250px;
-}
