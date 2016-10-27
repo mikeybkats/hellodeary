@@ -19,11 +19,11 @@ $(document).ready(function(event) {
 
         // if this target
         if ($(this.hash).offset().top > $(document).height()-$(window).height()){
-             dest=$(document).height()-$(window).height()+2;
+             dest=$(document).height()-$(window).height();
         }
 
         else{
-             dest=$(this.hash).offset().top+2;
+             dest=$(this.hash).offset().top;
         }
         //go to destination
         $('html,body').animate({scrollTop:dest}, 1000,'swing');
@@ -38,7 +38,7 @@ function iframeAddClass(){
 };
 
 //sticky menu
-var window = document.getElementById('window');
+//var window = document.getElementById('window');
 var url = window.location.pathname;
 var filename = url.substring(url.lastIndexOf('/')+1);
 var menuMargin = parseInt($('#navigation').css('margin-top'));
