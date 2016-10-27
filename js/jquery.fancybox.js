@@ -78,7 +78,7 @@
 			scrolling : 'auto', // 'auto', 'yes' or 'no'
 			wrapCSS   : '',
 
-			arrows     : true,
+			arrows     : false,
 
 			closeBtn   : false,
 			closeClick : false,
