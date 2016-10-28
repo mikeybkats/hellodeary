@@ -41,24 +41,20 @@ $(window).on('scroll', function(){
 });
 
 //sticky menu
+$(window).on('scroll', function(){
+        var scrollAmount = $(window).scrollTop();
+        var menuMargin = parseInt($('#navigation').css('margin-top'));
+        var $navigation = $('#navbar');
+        var $navigation = $('#navigation');
 
-if (filename === 'index.html'){
-  function scrollReader (event){
-    var scrollAmount = $(window).scrollTop();
-    // console.log(scrollAmount);
-
-    var navigation = document.getElementById('navbar');
     if (scrollAmount >= menuMargin){
-      var navigation = document.getElementById('navigation');
-      navigation.className = 'navigation fixed';
+      $navigation.addClass('fixed');
     }
 
     if (scrollAmount <= menuMargin){
-      var navigation = document.getElementById('navigation');
-      navigation.className = 'navigation';
+      $navigation.removeClass('fixed');
     }
-  };
-}
+  });
 
 function iframeAddClass(){
   $('.fancybox-nav').addClass('display_none');
@@ -123,6 +119,3 @@ function hideNavArrows (){
 
 
 caseStudyIdMaker();
-
-window.addEventListener('scroll', scrollReader);
-
