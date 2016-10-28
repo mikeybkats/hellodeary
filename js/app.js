@@ -1,12 +1,6 @@
-var devLink = document.getElementById('devLink');
-var devBox = document.getElementById('devBox');
-var detailLink = document.getElementById('detailLink');
-
-//menu highlight on click
-$('a.menuButton').click(function() {
-    $('a.menuButton.active').removeClass('active');
-    $(this).addClass('active');
-});
+var url = window.location.pathname;
+var filename = url.substring(url.lastIndexOf('/')+1);
+var menuMargin = parseInt($('#navigation').css('margin-top'));
 
 //scroll to corresponding menu div
 $(".menuButton").click(function(event){
@@ -28,33 +22,25 @@ $(".menuButton").click(function(event){
       $('html,body').animate({scrollTop:dest}, 1000,'swing');
 
 });
-        $(window).on('scroll', function(){
-           $('.menuButton').each(function() {
-              if($(this.hash).offset().top > $(document).height()-$(window).height()) {
-              //some code
-              console.log('it works');
-                }
-            });
-        });
 
-// menu highlight on scroll to div
-// if div id matches to button id then highlight menu item
-  // select the div
-  // select the menuButton
-  // subtract the window height from the document height
+//menu highlight on click
+$('#navigation .navbar li a').click(function() {
+    $(this).parent().find('a').removeClass('active');
+    $(this).addClass('active');
+});
 
-
-
-function iframeAddClass(){
-  $('.fancybox-nav').addClass('display_none');
-  console.log('success');
-};
+$(window).on('scroll', function(){
+   $('section').each(function() {
+      if($(window).scrollTop() >= $(this).offset().top){
+          var id = $(this).attr('id');
+          console.log(id);
+          $('#navigation .navbar li a').removeClass('active');
+          $('#navigation .navbar li a[href=#' + id +']').addClass('active');
+      }
+  });
+});
 
 //sticky menu
-//var window = document.getElementById('window');
-var url = window.location.pathname;
-var filename = url.substring(url.lastIndexOf('/')+1);
-var menuMargin = parseInt($('#navigation').css('margin-top'));
 
 if (filename === 'index.html'){
   function scrollReader (event){
@@ -73,6 +59,11 @@ if (filename === 'index.html'){
     }
   };
 }
+
+function iframeAddClass(){
+  $('.fancybox-nav').addClass('display_none');
+  console.log('success');
+};
 
 // load fancybox
 $(document).ready(function() {
