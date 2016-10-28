@@ -212,7 +212,7 @@ footer {
   background-color: #939393;
 	flex-direction: column;
 	justify-content: center;
-  min-height: 90vh;
+  min-height: 70vh;
 }
 
 .projects {

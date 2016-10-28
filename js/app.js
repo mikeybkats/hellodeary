@@ -1,36 +1,49 @@
 var devLink = document.getElementById('devLink');
 var devBox = document.getElementById('devBox');
-
 var detailLink = document.getElementById('detailLink');
 
-//menu highlight
-$(document).ready(function(event) {
-  $('a.menuButton').click(function() {
+//menu highlight on click
+$('a.menuButton').click(function() {
     $('a.menuButton.active').removeClass('active');
     $(this).addClass('active');
-  });
+});
 
-  $(".menuButton").click(function(event){
-        event.preventDefault();
-        //calculate destination place
-        var dest=0;
-        // .hash is a jquery property which grabs the target of the href
-        console.log(this.hash);
+//scroll to corresponding menu div
+$(".menuButton").click(function(event){
+      event.preventDefault();
+      //calculate destination place
+      var dest=0;
+      // .hash is a jquery property which grabs the target of the href
+      console.log(this.hash);
 
-        // if this target
-        if ($(this.hash).offset().top > $(document).height()-$(window).height()){
-             dest=$(document).height()-$(window).height();
-        }
+      // if this target
+      if ($(this.hash).offset().top > $(document).height()-$(window).height()){
+           dest=$(document).height()-$(window).height()+2;
+      }
 
-        else{
-             dest=$(this.hash).offset().top;
-        }
-        //go to destination
-        $('html,body').animate({scrollTop:dest}, 1000,'swing');
-
-    });
+      else{
+           dest=$(this.hash).offset().top+2;
+      }
+      //go to destination
+      $('html,body').animate({scrollTop:dest}, 1000,'swing');
 
 });
+        $(window).on('scroll', function(){
+           $('.menuButton').each(function() {
+              if($(this.hash).offset().top > $(document).height()-$(window).height()) {
+              //some code
+              console.log('it works');
+                }
+            });
+        });
+
+// menu highlight on scroll to div
+// if div id matches to button id then highlight menu item
+  // select the div
+  // select the menuButton
+  // subtract the window height from the document height
+
+
 
 function iframeAddClass(){
   $('.fancybox-nav').addClass('display_none');
