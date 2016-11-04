@@ -43,20 +43,22 @@ $(window).on('scroll', function(){
 });
 
 //sticky menu
-$(window).on('scroll', function(){
-        var scrollAmount = $(window).scrollTop();
-        var menuMargin = parseInt($('#navigation').css('margin-top'));
-        var $navbar = $('#navbar');
-        var $navigation = $('#navigation');
+if ($(window).width() >= 800){
+  $(window).on('scroll', function(){
+          var scrollAmount = $(window).scrollTop();
+          var menuMargin = parseInt($('#navigation').css('margin-top'));
+          var $navbar = $('#navbar');
+          var $navigation = $('#navigation');
 
-    if (scrollAmount >= menuMargin){
-      $navigation.addClass('fixed');
-    }
+      if (scrollAmount >= menuMargin){
+        $navigation.addClass('fixed');
+      }
 
-    if (scrollAmount <= menuMargin){
-      $navigation.removeClass('fixed');
-    }
-  });
+      if (scrollAmount <= menuMargin){
+        $navigation.removeClass('fixed');
+      }
+    });
+}
 
 function iframeAddClass(){
   $('.fancybox-nav').addClass('display_none');
@@ -123,6 +125,7 @@ function caseStudyIdMaker(){
 if ( $(window).width() <= 800 ){
   $('a').removeClass('fancybox fancybox.iframe');
   $('#navigation').removeClass('display_none');
+  $('#navigation').addClass('fixed');
 }
 
 //fancybox menu back button
