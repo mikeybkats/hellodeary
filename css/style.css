@@ -551,6 +551,10 @@ p.blog {
     text-align: center;
   }
 
+  a.menuButton {
+  padding: 14px 11%;
+  }
+
   .display_none {
     display: none;
   }
