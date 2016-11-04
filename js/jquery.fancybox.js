@@ -56,17 +56,17 @@
 			padding : 15,
 			margin  : 20,
 
-			width     : 800,
-			height    : 600,
-			minWidth  : 100,
-			minHeight : 100,
+			width     : 900,
+			height    : 800,
+			minWidth  : 300,
+			minHeight : 300,
 			maxWidth  : 9999,
 			maxHeight : 9999,
 			pixelRatio: 1, // Set to 2 for retina display support
 
 			autoSize   : true,
-			autoHeight : false,
-			autoWidth  : false,
+			autoHeight : true,
+			autoWidth  : true,
 
 			autoResize  : true,
 			autoCenter  : !isTouch,
@@ -80,8 +80,8 @@
 
 			arrows     : false,
 
-			closeBtn   : false,
-			closeClick : false,
+			closeBtn   : true,
+			closeclick : false,
 			nextClick  : false,
 			mouseWheel : false,
 			autoPlay   : false,

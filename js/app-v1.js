@@ -64,7 +64,7 @@ function iframeAddClass(){
 
 // load fancybox
 $(document).ready(function() {
-      $(".fancybox").attr('rel', 'gallery').fancybox({
+  		$(".fancybox").attr('rel', 'gallery').fancybox({
             openEffect  : 'none',
             closeEffect : 'none',
             nextEffect  : 'none',
@@ -79,35 +79,35 @@ $(document).ready(function() {
 // load hero image into detail page
 var heroImageSrc = $('#heroImage').attr('src');
 $('#heroImageSection').css(
-  'background', 'url(' + heroImageSrc + ') 100% 100% no-repeat border-box'
+	'background', 'url(' + heroImageSrc + ') 100% 100% no-repeat border-box'
 );
 
 $('#heroImageSection').css(
-  'background-size', 'cover'
+	'background-size', 'cover'
 );
 
 function caseStudyIdMaker(){
 
-  for(i = 0; i<3; i++){
-    var caseStudyID = '#caseStudyImage' + [i] ;
+	for(i = 0; i<3; i++){
+		var caseStudyID = '#caseStudyImage' + [i] ;
 
-    var caseStudyImageSRC = $(caseStudyID).attr('src');
+		var caseStudyImageSRC = $(caseStudyID).attr('src');
 
-    var pictureBoxID = '#pictureBox' + [i];
+		var pictureBoxID = '#pictureBox' + [i];
 
-    $(pictureBoxID).css(
-    'background', 'url(' + caseStudyImageSRC + ') 100% 100% no-repeat border-box'
-    );
+		$(pictureBoxID).css(
+		'background', 'url(' + caseStudyImageSRC + ') 100% 100% no-repeat border-box'
+		);
 
-    $(pictureBoxID).css(
-    'background-size', 'cover'
-    );
+		$(pictureBoxID).css(
+		'background-size', 'cover'
+		);
 
-    $(pictureBoxID).css(
-    'background-position', 'center'
-    );
+		$(pictureBoxID).css(
+		'background-position', 'center'
+		);
 
-    $(pictureBoxID).addClass('blog_image');
+		$(pictureBoxID).addClass('blog_image');
 
   }
 }
