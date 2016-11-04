@@ -557,9 +557,9 @@ p.blog {
 
   .navbar {
     margin: 0px;
-    padding: 0px 12px;
+    padding: 5px 10px;
     display: flex;
-    justify-content:flex-start;
+    justify-content: center
     list-style-type: none;
     align-items: flex-end;
   }
@@ -567,8 +567,8 @@ p.blog {
   .navigation {
       background-color: #f59a3f;
       position: absolute;
-      margin-top: 0px;
-      padding: 11px 0px;
+      margin-top: 0px !important;
+      padding: 15px 0px;
       width: 100vw;
       left: 0;
       top: 0;
