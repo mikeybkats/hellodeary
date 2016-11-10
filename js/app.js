@@ -16,7 +16,7 @@ $(document).ready(function(){
 //scroll to corresponding menu div
 $(".menuButton").click(function(event){
       //check to see if it is a home button
-      if ( $(".menuButton").attr('href') === '../index.html'){
+      if ( $(".menuButton").attr('href') === 'javascript:;'){
         return;
       }
 
@@ -103,7 +103,7 @@ $('#heroImageSection').css(
 
 function caseStudyIdMaker(){
 
-  for(i = 0; i<3; i++){
+  for(i = 0; i < document.getElementsByClassName('box_caption').length; i++){
     var caseStudyID = '#caseStudyImage' + [i] ;
 
     var caseStudyImageSRC = $(caseStudyID).attr('src');
@@ -137,6 +137,10 @@ if ( $(window).width() <= 800 ){
 //fancybox menu back button
 function goBack(){
   window.history.back();
+
+  if (typeof(window.history.back()) === 'undefined' ){
+    window.location.href = 'http://www.hellodeary.com';
+  }
 }
 
 caseStudyIdMaker();
