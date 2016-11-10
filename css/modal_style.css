@@ -104,7 +104,7 @@ section {
 }
 
 a {
-	color: black !important;
+	color: black ;
   text-decoration: none;
 }
 
@@ -121,8 +121,16 @@ a.menuButtonHome {
 }
 
 a.menuButton.active {
-  color: #fff !important;
-  background-color: #e90f51 !important;
+  color: #fff ;
+  background-color: #e90f51;
+}
+
+a.mustard {
+  color: #FF9933;
+}
+
+a.mustard:visited {
+  color: #FF9933;
 }
 
 li {
@@ -141,9 +149,13 @@ li {
 	background-color: #EC0050;
 }
 
+.hero_image.hero540 {
+  min-height: 540px;
+}
+
 .row.icon {
 	margin: 10%;
-	max-width: 120px;
+	max-width: 150px;
 }
 
 .clear {
@@ -201,14 +213,14 @@ footer {
 	padding: 0px 0px 20px 0px;
 	margin: 5px 5px 5px 0px;
 }
-
+/*
 .box_middle {
 	margin: 5px 5px 5px 5px;
 }
 
 .box_right {
 	margin: 5px 0px 5px 5px;
-}
+}*/
 
 .outer_box {
 	/*border: 1px solid black;*/
@@ -304,11 +316,15 @@ a.fullstory {
 
 .idea_row {
 	background-color: #4A4A4A;
+  flex-wrap: wrap;
 }
 
 .caption p {
-	color: #f59a3f;
+    color: #f59a3f;
+    width: 150px;
+    text-align: center;
 }
+
 @media screen and (max-width: 800px){
 
 	header {
@@ -372,7 +388,7 @@ a.fullstory {
 
   .row.icon {
     margin: 0%;
-    max-width: 120px;
+    max-width: 150px;
 	}
 
   .box {

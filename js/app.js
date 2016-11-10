@@ -1,6 +1,17 @@
 var url = window.location.pathname;
 var filename = url.substring(url.lastIndexOf('/')+1);
 var menuMargin = parseInt($('#navigation').css('margin-top'));
+var $blogAssignMenuMargin = $('.blog_title').css('margin-top', $('.navigation').height()-2);
+// var $blogTopMargin = $('.blog_section').css('margin-top', function(){
+//   $('.navigation').height();
+// });
+var $newMargin = parseInt($('.blog_title').css('padding-bottom')) + parseInt($('.blog_title').css('padding-top')) + $('.blog_title').height() - 2;
+
+//add top margin on blog page
+$(document).ready(function(){
+  event.preventDefault();
+  $('.blog_section').css('margin-top', $newMargin);
+});
 
 //scroll to corresponding menu div
 $(".menuButton").click(function(event){
@@ -27,11 +38,13 @@ $(".menuButton").click(function(event){
 
 });
 
+//scroll and add menu highlight when scrolling over div
 $(window).on('scroll', function(){
    $('section').each(function() {
       if($(window).scrollTop() >= $(this).offset().top){
           var id = $(this).attr('id');
 
+          // if the menu only has one choice then return to prevent highlighting
           if ($('#navigation .navbar li a')[0].id === 'backButton'){
            return;
           }
@@ -40,15 +53,19 @@ $(window).on('scroll', function(){
           $('#navigation .navbar li a[href=#' + id +']').addClass('active');
       }
   });
+
 });
 
 //sticky menu
 if ($(window).width() >= 800){
   $(window).on('scroll', function(){
           var scrollAmount = $(window).scrollTop();
-          var menuMargin = parseInt($('#navigation').css('margin-top'));
           var $navbar = $('#navbar');
           var $navigation = $('#navigation');
+
+      if ($('.navigation_detail').attr('class') === 'navigation navigation_detail fixed' ){
+        return;
+      }
 
       if (scrollAmount >= menuMargin){
         $navigation.addClass('fixed');
@@ -58,10 +75,6 @@ if ($(window).width() >= 800){
         $navigation.removeClass('fixed');
       }
     });
-}
-
-function iframeAddClass(){
-  $('.fancybox-nav').addClass('display_none');
 }
 
 // load fancybox
@@ -113,13 +126,6 @@ function caseStudyIdMaker(){
 
   }
 }
-
-// close fancybox with home button when not in mobile screen
-// $('#homeButton').click( function(){
-//   console.log('test');
-//   parent.$('body').fancybox.close();
-//   $('.fancybox-overlay').trigger('click');
-// });
 
 // remove fancybox for mobile views
 if ( $(window).width() <= 800 ){
