@@ -16,7 +16,13 @@ $(document).ready(function(){
 //scroll to corresponding menu div
 $(".menuButton").click(function(event){
       //check to see if it is a home button
-      if ( $(".menuButton").attr('href') === 'javascript:;'){
+      if ( $(".menuButton").attr('href') === 'javascript:;')
+      {
+        return;
+      }
+
+      if ( $(".menuButton .notag") )
+      {
         return;
       }
 
@@ -104,8 +110,7 @@ $('#heroImageSection').css(
 function caseStudyIdMaker(){
 
   for(i = 0; i < document.getElementsByClassName('box_caption').length; i++){
-    var caseStudyID = '#caseStudyImage' + [i] ;
-
+    var caseStudyID = '#caseStudyImage' + [i];
     var caseStudyImageSRC = $(caseStudyID).attr('src');
 
     var pictureBoxID = '#pictureBox' + [i];
@@ -124,6 +129,29 @@ function caseStudyIdMaker(){
 
     $(pictureBoxID).addClass('blog_image');
 
+    caseStudyImageSRC = $(caseStudyID).attr('src');
+
+  if (document.getElementById('caseStudyImageLarge' + [i])) {
+      var caseStudyIdLarge = '#caseStudyImageLarge' + [i];
+      var caseStudyImageSrcLarge = $(caseStudyIdLarge).attr('src');
+      var pictureBoxIdLarge = '#pictureBox' + [i];
+
+      $(pictureBoxID).css(
+      'background', 'url(' + caseStudyImageSrcLarge + ') 100% 100% no-repeat border-box'
+      );
+
+      $(pictureBoxIdLarge).css(
+      'background-size', 'contain'
+      );
+
+      $(pictureBoxIdLarge).css(
+      'background-position', 'center'
+      );
+
+      $(pictureBoxIdLarge).addClass('blog_image_large');
+
+      caseStudyImageSrcLarge = $(caseStudyIdLarge).attr('src');
+    }
   }
 }
 
@@ -138,9 +166,6 @@ if ( $(window).width() <= 800 ){
 function goBack(){
   window.history.back();
 
-  if (typeof(window.history.back()) === 'undefined' ){
-    window.location.href = 'http://www.hellodeary.com';
-  }
 }
 
 caseStudyIdMaker();

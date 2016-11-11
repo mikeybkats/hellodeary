@@ -134,7 +134,7 @@ section {
 
 footer {
   background-color: #939393;
-  height: 300px;
+  height: 20vh;
 }
 
 .title {
@@ -362,7 +362,7 @@ p.blog {
 	font-weight: 300;
 	font-size: 16px;
 	color: #444;
-	margin: 20px 40px;
+	margin: 10px 10% 40px 10%;
 }
 
 a.blog {
@@ -388,7 +388,7 @@ li.blog {
 
 	flex-direction: column;
 	align-items: flex-start;
-  background-color: #f59a3f;
+  background-color: #F6F6F6;
 }
 
 .navigation_modal {
@@ -420,8 +420,13 @@ li.blog {
 }
 
 .blog_image {
-	min-height: 450px;
+	min-height: 40vh;
 	min-width: 100%;
+}
+
+.blog_image_large {
+  min-height: 70vh;
+  min-width: 100%;
 }
 
 .box_caption {
@@ -528,6 +533,12 @@ li.blog {
 }
 
 @media screen and (max-width: 800px){
+
+  .blog_image_large {
+    min-height: 40vh;
+    min-width: 100%;
+  }
+
 
   header {
     display: flex;
