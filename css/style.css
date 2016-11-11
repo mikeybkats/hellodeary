@@ -126,6 +126,7 @@ a.light {
   font-family: 'Open Sans';
   font-weight: 100;
   font-size: 14px;
+  line-height: 50px;
 }
 
 a.menuButton.activeImportant {
@@ -249,10 +250,6 @@ a.mustard {
 
 a.mustard:visited {
   color: #FF9933;
-}
-
-a.mustard.blogexit {
-  margin: 20px 40px;
 }
 
 .caption {
@@ -587,7 +584,7 @@ li.blog {
   }
 
   .title.blog_title {
-    margin-top: 27px;
+    margin-top: 32px;
     padding: 3% 0%;
     position: fixed;
     width: 100vw;
@@ -648,23 +645,23 @@ li.blog {
       border-top: 0;
   }
 
-  .center.icon {
-    width: 140px;
-    margin-top: 45px;
-  }
-
   .navigation.fixed {
     background-color: #f59a3f;
     position: fixed;
     margin-top: -1px !important;
-    padding: 11px 0px;
+    padding: 16px 0px;
     width: 100vw;
     left: 0;
     top: 0;
     z-index: 100;
     border-top: 0;
-
   }
+
+  .center.icon {
+    width: 140px;
+    margin-top: 45px;
+  }
+
 
   .address {
     margin: 20px 0px;

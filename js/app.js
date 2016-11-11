@@ -2,16 +2,6 @@ var url = window.location.pathname;
 var filename = url.substring(url.lastIndexOf('/')+1);
 var menuMargin = parseInt($('#navigation').css('margin-top'));
 var $blogAssignMenuMargin = $('.blog_title').css('margin-top', $('.navigation').height() + $('.navigation.fixed').css('padding-top') + $('.navigation.fixed').css('padding-bottom'));
-// var $blogTopMargin = $('.blog_section').css('margin-top', function(){
-//   $('.navigation').height();
-// });
-var $newMargin = parseInt($('.blog_title').css('padding-bottom')) + parseInt($('.blog_title').css('padding-top')) + $('.blog_title').height() - 2;
-
-//add top margin on blog page
-$(document).ready(function(){
-  event.preventDefault();
-  $('.blog_section').css('margin-top', $newMargin);
-});
 
 //scroll to corresponding menu div
 $(".menuButton").click(function(event){
@@ -157,10 +147,28 @@ if ( $(window).width() <= 800 ){
   $('#navigation').addClass('fixed');
 }
 
-//fancybox menu back button
-function goBack(){
-  window.history.back();
+//add top margin on blog page
+function addBlogMargin (){
+
+  $(window).load(function(){
+    $newMargin =
+      parseInt($('.title.blog_title').css('margin-top')) +
+      parseInt($('.blog_title').css('padding-bottom')) +
+      parseInt($('.blog_title').css('padding-top')) +
+      parseInt($('.title.blog_title').height()) - 2;
+
+  console.log($newMargin);
+
+    event.preventDefault();
+    $('.blog_section').css('margin-top', $newMargin);
+  });
 
 }
 
+//fancybox menu back button
+function goBack(){
+  window.history.back();
+}
+
 caseStudyIdMaker();
+addBlogMargin();
