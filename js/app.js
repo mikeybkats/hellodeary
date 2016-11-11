@@ -21,11 +21,6 @@ $(".menuButton").click(function(event){
         return;
       }
 
-      if ( $(".menuButton .notag") )
-      {
-        return;
-      }
-
       event.preventDefault();
       //calculate destination place
       var dest=0;
