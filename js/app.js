@@ -1,7 +1,7 @@
 var url = window.location.pathname;
 var filename = url.substring(url.lastIndexOf('/')+1);
 var menuMargin = parseInt($('#navigation').css('margin-top'));
-var $blogAssignMenuMargin = $('.blog_title').css('margin-top', $('.navigation').height()-2);
+var $blogAssignMenuMargin = $('.blog_title').css('margin-top', $('.navigation').height() + $('.navigation.fixed').css('padding-top') + $('.navigation.fixed').css('padding-bottom'));
 // var $blogTopMargin = $('.blog_section').css('margin-top', function(){
 //   $('.navigation').height();
 // });
