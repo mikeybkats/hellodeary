@@ -593,11 +593,12 @@ li.blog {
   }
 
   header {
+    height: 60vh;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    padding: 100px 60px;
+    padding: 0px 0px;
     margin: 0px 0px;
   }
 
