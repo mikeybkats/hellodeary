@@ -133,6 +133,17 @@ a.mustard:visited {
   color: #FF9933;
 }
 
+a.menuButton.activeImportant {
+  color: #fff !important;
+  background-color: #e90f51 !important;
+}
+
+a.mustard.iconAlign{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
 li {
   text-align: center;
 }
@@ -332,7 +343,7 @@ a.fullstory {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    padding: 50px 60px;
+    padding: 90px 0px 50px 0px;
     margin: 0px 0px;
   }
 
@@ -349,10 +360,26 @@ a.fullstory {
     text-align: center;
   }
 
+  h1 {
+    font-family: 'Roboto Mono';
+    font-weight: bold;
+    color: #fff;
+    font-size: 2.1em;
+  }
+
+  .body_content_section {
+    background-color: #D07E7E;
+    padding: 20px 0px;
+  }
+
 	.display_none {
 		display: none;
 	}
 
+  .content_margin {
+    padding: 50px 0px;
+    background-color: #4A4A4A;
+  }
 
   .navbar {
     margin: 0px;
@@ -427,6 +454,7 @@ a.fullstory {
 		align-items: flex-start;;
 		margin: 0px;
 		padding-left: 30px;
+    padding-right: 30px;
 	}
 
   .title.large {

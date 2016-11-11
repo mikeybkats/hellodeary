@@ -16,7 +16,7 @@ $(document).ready(function(){
 //scroll to corresponding menu div
 $(".menuButton").click(function(event){
       //check to see if it is a home button
-      if ( $(".menuButton").attr('href') === 'javascript:;')
+      if ( $(".menuButton").attr('href') === 'javascript:;' | $(".menuButton").attr('href') === '../index.html')
       {
         return;
       }

@@ -70,8 +70,8 @@ h3 {
 
 p {
 	font-family: 'Open Sans';
-	font-weight: 300;
-	font-size: 18px;
+  font-weight: 300;
+  font-size: 18px;
 }
 
 a {
@@ -117,12 +117,33 @@ a.mustard:visited {
   color: #FF9933;
 }
 
+.title.bright {
+   color: #E90F51;
+}
+
+a.light {
+  color: #E90F51;
+  font-family: 'Open Sans';
+  font-weight: 100;
+  font-size: 14px;
+}
+
+a.menuButton.activeImportant {
+  color: #fff !important;
+  background-color: #e90f51 !important;
+}
+
+.headerBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 header {
   display: flex;
   height: 190px;
   background-image: url("../assets/navigation-background.jpg");
-
-  align-items: center;
+   align-items: center;
   flex-direction: row;
   justify-content: space-between;
   padding: 0px 60px;
@@ -152,10 +173,6 @@ footer {
 
 .title {
 	margin: 5px 0px;
-}
-
-.title.heading {
-	margin: 10px 0px;
 }
 
 .title.large {
@@ -276,12 +293,14 @@ a.mustard.blogexit {
 	flex-direction: column;
 	justify-content: center;
   background-color: #d07e7e;
+  padding: 50px 0px;
 }
 
 .ideas {
 	flex-direction: column;
 	justify-content: center;
   background-color: #eedaa1;
+  padding: 50px 0px;
 }
 
 .contact {
@@ -453,8 +472,15 @@ li.blog {
 
 /* media queries */
 @media screen and (max-width: 340px){
-  h3 {
+
+  h1 {
+    font-family: 'Roboto Mono';
+    color: #e90f51;
     font-size: 2.5em;
+  }
+
+  h3 {
+    font-size: 2.3em;
     font-weight: 600;
   }
 }
@@ -525,12 +551,15 @@ li.blog {
     flex-direction: column;
     justify-content: center;
     min-height: inherit;
+    padding: 50px 0px;
+
   }
 
   .contact {
     flex-direction: column;
     justify-content: center;
     min-height: inherit;
+    padding: 50px 0px;
   }
 
   .box_three,  .box_middle, .box_right{
@@ -546,26 +575,37 @@ li.blog {
 }
 
 @media screen and (max-width: 800px){
+  .headerBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
   .blog_image_large {
     min-height: 40vh;
     min-width: 100%;
   }
 
+  .title.blog_title {
+    margin-top: 27px;
+    padding: 3% 0%;
+    position: fixed;
+    width: 100vw;
+    left: 0;
+    background-color: #F59A3F;
+  }
 
   header {
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    padding: 50px 60px;
+    padding: 100px 60px;
     margin: 0px 0px;
   }
 
   section {
     display: flex;
-    flex-direction: column;
-    min-height: 300px;
     margin: 0px 0px;
   }
 
@@ -576,11 +616,11 @@ li.blog {
   }
 
   a.menuButton {
-  padding: 14px 11%;
+  padding: 14px 10px;
   }
 
- a.menuButtonLink {
-  padding: 14px 11%;
+  a.menuButtonLink {
+  padding: 14px 10px;
   }
 
   .display_none {
@@ -589,7 +629,7 @@ li.blog {
 
   .navbar {
     margin: 0px;
-    padding: 5px 10px;
+    padding: 0px 13px;
     display: flex;
     justify-content: center;
     list-style-type: none;
@@ -608,6 +648,10 @@ li.blog {
       border-top: 0;
   }
 
+  .center.icon {
+    width: 140px;
+    margin-top: 45px;
+  }
 
   .navigation.fixed {
     background-color: #f59a3f;
@@ -620,13 +664,6 @@ li.blog {
     z-index: 100;
     border-top: 0;
 
-  }
-
-  .text-box {
-    width: inherit;
-    display: flex;
-    flex-direction: column;
-    margin: 30px 60px;
   }
 
   .address {
@@ -675,10 +712,10 @@ li.blog {
   }
 
   .text-box {
-    width: 100%;
+    width: 80%;
     display: flex;
     flex-direction: column;
-    margin: 10px;
+    margin: 30px 20px
   }
 
   .large_title_box {
@@ -691,7 +728,7 @@ li.blog {
   }
 
   .title.large {
-    padding: 0px 10vw;
+    margin: 0px 0px;
     flex-direction: column;
     display: flex;
     align-items: center;
@@ -699,7 +736,7 @@ li.blog {
   }
 
   .hero {
-    height: 50vh;
+    height: 80vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
