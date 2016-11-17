@@ -127,7 +127,7 @@ function caseStudyIdMaker(){
       );
 
       $(pictureBoxIdLarge).css(
-      'background-size', 'contain'
+      'background-size', 'cover'
       );
 
       $(pictureBoxIdLarge).css(
@@ -176,8 +176,10 @@ function addBlogMargin (){
         $newLowerMargin =
           $newUpperMargin +
           parseInt($('.title.blog_title').height()) +
-          parseInt($('.title.blog_title').css('padding-bottom')) +
-          parseInt($('.title.blog_title').css('padding-top')) - 40;
+          parseInt($('.title.blog_title').css('padding-bottom'))
+           +
+          parseInt($('.title.blog_title').css('padding-top')) - 40
+          ;
       }
 
       $('.title.blog_title').css('margin-top', $newUpperMargin);

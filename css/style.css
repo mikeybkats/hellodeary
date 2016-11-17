@@ -154,6 +154,27 @@ li {
   text-align: center;
 }
 
+li.listButton {
+  text-align: left;
+  margin-left: 10%;
+  margin-top: 25px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+li.listButton a {
+  color: white;
+  background-color: #E90F51;
+  padding: 8px;
+  cursor: pointer;
+  z-index: 1
+}
+
+li.blog {
+  text-align: left;
+  margin-left: 10%
+}
+
 section {
 	display: flex;
   min-height: 400px;
@@ -408,11 +429,6 @@ ul.blog {
   margin: 20px 40px;
 }
 
-li.blog {
-  text-align: left;
-  margin-left: 10%
-}
-
 .blog_section {
 
 	flex-direction: column;
@@ -449,12 +465,12 @@ li.blog {
 }
 
 .blog_image {
-	min-height: 40vh;
+	min-height: 58vh;
 	min-width: 100%;
 }
 
 .blog_image_large {
-  min-height: 70vh;
+  min-height: 100vh;
   min-width: 100%;
 }
 
@@ -463,6 +479,7 @@ li.blog {
   width: 100%;
   display: flex;
   align-content: center;
+  flex-direction: column;
 }
 
 .box_caption.long {
