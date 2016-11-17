@@ -154,6 +154,27 @@ li {
   text-align: center;
 }
 
+li.listButton {
+  text-align: left;
+  margin-left: 10%;
+  margin-top: 25px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+li.listButton a {
+  color: white;
+  background-color: #E90F51;
+  padding: 8px;
+  cursor: pointer;
+  z-index: 1
+}
+
+li.blog {
+  text-align: left;
+  margin-left: 10%
+}
+
 section {
 	display: flex;
   min-height: 400px;
@@ -391,7 +412,7 @@ p.blog {
 	font-weight: 300;
 	font-size: 16px;
 	color: #444;
-	margin: 10px 10% 40px 10%;
+	margin: 40px 10% 40px 10%;
 }
 
 a.blog {
@@ -406,11 +427,6 @@ ul.blog {
   font-size: 16px;
   color: #444;
   margin: 20px 40px;
-}
-
-li.blog {
-  text-align: left;
-  margin-left: 10%
 }
 
 .blog_section {
@@ -449,18 +465,21 @@ li.blog {
 }
 
 .blog_image {
-	min-height: 40vh;
+	min-height: 58vh;
 	min-width: 100%;
 }
 
 .blog_image_large {
-  min-height: 70vh;
+  min-height: 100vh;
   min-width: 100%;
 }
 
 .box_caption {
 	background-color: #F6F6F6;
   width: 100%;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
 }
 
 .box_caption.long {
@@ -589,6 +608,7 @@ li.blog {
     position: fixed;
     width: 100vw;
     left: 0;
+    top: -1px;
     background-color: #F59A3F;
   }
 

@@ -2,6 +2,7 @@ var url = window.location.pathname;
 var filename = url.substring(url.lastIndexOf('/')+1);
 var menuMargin = parseInt($('#navigation').css('margin-top'));
 var $blogAssignMenuMargin = $('.blog_title').css('margin-top', $('.navigation').height() + $('.navigation.fixed').css('padding-top') + $('.navigation.fixed').css('padding-bottom'));
+var $newMargin = 0;
 
 //scroll to corresponding menu div
 $(".menuButton").click(function(event){
@@ -126,7 +127,7 @@ function caseStudyIdMaker(){
       );
 
       $(pictureBoxIdLarge).css(
-      'background-size', 'contain'
+      'background-size', 'cover'
       );
 
       $(pictureBoxIdLarge).css(
@@ -151,19 +152,61 @@ if ( $(window).width() <= 800 ){
 function addBlogMargin (){
 
   $(window).load(function(){
-    $newMargin =
-      parseInt($('.title.blog_title').css('margin-top')) +
-      parseInt($('.blog_title').css('padding-bottom')) +
-      parseInt($('.blog_title').css('padding-top')) +
-      parseInt($('.title.blog_title').height()) - 2;
+      event.preventDefault();
 
-  console.log($newMargin);
+      if ( $(window).width() < 800 ){
+        $newUpperMargin =
+          parseInt($('.navigation.navigation_detail').height()) +
+          parseInt($('.navigation').css('padding-top')) +
+          parseInt($('.navigation').css('padding-bottom'));
 
-    event.preventDefault();
-    $('.blog_section').css('margin-top', $newMargin);
+        $newLowerMargin =
+          $newUpperMargin +
+          parseInt($('.title.blog_title').height()) +
+          parseInt($('.title.blog_title').css('padding-bottom')) +
+          parseInt($('.title.blog_title').css('padding-top'));
+      }
+
+      if ( $(window).width() > 800){
+        $newUpperMargin =
+        parseInt($('.navbar').css('padding-top')) +
+        parseInt($('.navbar').css('padding-bottom')) +
+        parseInt($('.navbar').height());
+
+        $newLowerMargin =
+          $newUpperMargin +
+          parseInt($('.title.blog_title').height()) +
+          parseInt($('.title.blog_title').css('padding-bottom'))
+           +
+          parseInt($('.title.blog_title').css('padding-top')) - 40
+          ;
+      }
+
+      $('.title.blog_title').css('margin-top', $newUpperMargin);
+      $('.blog_section').css('margin-top', $newLowerMargin);
+
+    console.log($newMargin);
   });
 
 }
+
+$(document).scroll(function(){
+    $newUpperMargin =
+        parseInt($('.navbar').css('padding-top')) +
+        parseInt($('.navbar').css('padding-bottom')) +
+        parseInt($('.navbar').height());
+
+
+    $newLowerMargin =
+          $newUpperMargin +
+          parseInt($('.title.blog_title').height()) +
+          parseInt($('.title.blog_title').css('padding-bottom')) +
+          parseInt($('.title.blog_title').css('padding-top'));
+
+    $('.blog_section').css('margin-top', $newLowerMargin);
+});
+
+
 
 //fancybox menu back button
 function goBack(){
