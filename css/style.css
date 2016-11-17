@@ -391,7 +391,7 @@ p.blog {
 	font-weight: 300;
 	font-size: 16px;
 	color: #444;
-	margin: 10px 10% 40px 10%;
+	margin: 40px 10% 40px 10%;
 }
 
 a.blog {
@@ -461,6 +461,8 @@ li.blog {
 .box_caption {
 	background-color: #F6F6F6;
   width: 100%;
+  display: flex;
+  align-content: center;
 }
 
 .box_caption.long {
@@ -589,6 +591,7 @@ li.blog {
     position: fixed;
     width: 100vw;
     left: 0;
+    top: -1px;
     background-color: #F59A3F;
   }
 
