@@ -106,6 +106,7 @@ section {
 a {
 	color: black ;
   text-decoration: none;
+  font-family: 'Roboto Mono';
 }
 
 a:visited {
@@ -166,7 +167,7 @@ li {
 
 .row.icon {
 	margin: 10%;
-	max-width: 150px;
+  width: 110px;
 }
 
 .clear {
@@ -215,7 +216,7 @@ footer {
 .box_three {
 	/* for three boxes in a row */
 	background-color: #4A4A4A;
-	width: 33%;
+	width: 25%;
 	min-height: 200px;
 	display: flex;
 	justify-content: center;
@@ -223,6 +224,7 @@ footer {
  	align-items: center;
 	padding: 0px 0px 20px 0px;
 	margin: 5px 5px 5px 0px;
+  background-color: #333;
 }
 /*
 .box_middle {
@@ -330,10 +332,34 @@ a.fullstory {
   flex-wrap: wrap;
 }
 
+.icon_label {
+    text-align: center;
+    /* margin-bottom: 40px; */
+    margin-top: 10px;
+    padding: 0px;
+}
+
+.iconAlign {
+  flex-direction: column;
+}
+
 .caption p {
+    padding-top: 0px;
     color: #f59a3f;
     width: 150px;
     text-align: center;
+}
+
+.mustard {
+  color: #FF9933;
+}
+
+a.mustard {
+  color: #FF9933;
+}
+
+a.mustard:visited {
+  color: #FF9933;
 }
 
 @media screen and (max-width: 800px){
@@ -426,7 +452,7 @@ a.fullstory {
 
   .row.icon {
     margin: 0%;
-    max-width: 150px;
+    max-width: 110px;
 	}
 
   .box {
@@ -520,6 +546,7 @@ a.fullstory {
 
 	.fullstory {
 		margin-bottom: 10%;
+    margin-bottom: 30px;
 		padding: 10px;
 		background-color: #f59a3f;
 		color: white;
@@ -546,14 +573,14 @@ a.fullstory {
 @media screen and (max-width: 540px){
 
 	.box_three,  .box_middle, .box_right{
-    width: 40%;
+    width: 65%;
     min-height: 200px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
-    margin: 0px 0px;
+    padding: 10px;
+    margin: 10px 10px;
   }
 
 }
