@@ -160,11 +160,12 @@ li {
 }
 
 li.listButton {
-  text-align: left;
-  margin-left: 10%;
-  margin-top: 25px;
-  cursor: pointer;
-  z-index: 2;
+	line-height:35px;
+	text-align: left;
+	margin-left: 10%;
+	margin-top: 25px;
+	cursor: pointer;
+	z-index: 2;
 }
 
 li.listButton a {
