@@ -332,6 +332,8 @@ a.fullstory {
 .idea_row {
 	background-color: #4A4A4A;
   flex-wrap: wrap;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .icon_label {
