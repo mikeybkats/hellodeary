@@ -278,17 +278,23 @@ a.mustard:visited {
   text-align: center;
 }
 
-.icon {
+.icon_label {
+  margin-bottom: 40px;
+  margin-top: 30px;
+}
+
+.iconAlign {
+  flex-direction: column;
 }
 
 .row.icon {
-	margin: 10%;
-	max-width: 90px;
+  margin: 25px 0px -30px 0px;
+  max-width: 90px;
 }
 
 .clear {
 	width: 100%;
-  margin: 30px 0px;
+  /*margin: 30px 0px;*/
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -341,7 +347,6 @@ a.mustard:visited {
 	background-color: #e90f51;
 	width:20%;
 	max-width: 200px;
-	height: 20%;
 	max-height: 200px;
 	display: flex;
   flex-direction: column;
@@ -628,7 +633,7 @@ ul.blog {
   }
 
   h2 {
-    color: #fff;
+    color: #e90f51;
     font-size: 1.5em;
     text-align: center;
   }
@@ -703,7 +708,6 @@ ul.blog {
   }
 
   .row.icon {
-    margin: 0%;
     max-width: 120px;
   }
 
