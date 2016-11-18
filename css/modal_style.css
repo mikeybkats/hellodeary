@@ -331,6 +331,7 @@ a.fullstory {
 }
 
 .caption p {
+    padding-top: 0px;
     color: #f59a3f;
     width: 150px;
     text-align: center;
