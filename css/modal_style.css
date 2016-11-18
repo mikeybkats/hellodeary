@@ -169,6 +169,7 @@ li {
 .row.icon {
 	margin: 10%;
   width: 110px;
+  margin-bottom: 0px;
 }
 
 .clear {
